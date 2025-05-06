@@ -906,6 +906,26 @@
     {
       "request": {
         "method": "GET",
+        "urlPath": "/PublicHolidays",
+        "queryParameters": {
+          "countryIsoCode": {
+            "equalTo": "IT"
+          },
+          "validFrom": {
+            "equalTo": "2025-01-01"
+          },
+          "validTo": {
+            "equalTo": "2026-01-01"
+          }
+        }
+      },
+      "response": {
+        "status": 500
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
         "urlPath": "/Countries"
       },
       "response": {

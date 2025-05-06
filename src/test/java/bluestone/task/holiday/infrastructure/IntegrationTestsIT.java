@@ -94,6 +94,16 @@ public class IntegrationTestsIT {
         ResponseEntity<Void> forObject = restTemplate.getForEntity(url, Void.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(404), forObject.getStatusCode());
     }
+
+    @Test
+    void unsuccessfulRequest_ezxternalServiceError() {
+        TestRestTemplate restTemplate = new TestRestTemplate();
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, VALID_DATE, PL, "IT");
+        ResponseEntity<ProblemDetail> forObject = restTemplate.getForEntity(url, ProblemDetail.class);
+        Assertions.assertEquals(HttpStatusCode.valueOf(500), forObject.getStatusCode());
+        Assertions.assertEquals("One of dependency service is down. Please try later", forObject.getBody().getDetail());
+
+    }
 }
 
 

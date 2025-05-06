@@ -9,6 +9,7 @@ import bluestone.task.holiday.openholiday.client.RegionalApi;
 import bluestone.task.holiday.openholiday.model.HolidayResponse;
 import bluestone.task.holiday.openholiday.model.LocalizedText;
 import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpStatusCodeException;
 
 import java.time.LocalDate;
 import java.util.Collections;
@@ -66,7 +67,7 @@ class HolidayServiceImpl implements HolidayService {
     private <T> T wrapApiCall(Supplier<T> apiCall) {
         try {
             return apiCall.get();
-        } catch (HttpClientErrorException ex) {
+        } catch (HttpStatusCodeException ex) {
             throw new ExternalServiceError(ex);
         }
     }

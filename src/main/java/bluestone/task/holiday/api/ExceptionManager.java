@@ -55,7 +55,7 @@ class ExceptionManager {
     }
 
     @ExceptionHandler(ExternalServiceError.class)
-    public ResponseEntity<ProblemDetail> externalSeriveError(ExternalServiceError ex) {
+    public ResponseEntity<ProblemDetail> externalServiceError(ExternalServiceError ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
         problemDetail.setDetail("One of dependency service is down. Please try later");
         log.error("External service error:", ex);
