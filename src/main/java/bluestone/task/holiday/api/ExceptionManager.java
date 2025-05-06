@@ -1,5 +1,6 @@
 package bluestone.task.holiday.api;
 
+import bluestone.task.holiday.domain.ExternalServiceError;
 import bluestone.task.holiday.domain.UnsupportedCountryException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,6 +52,14 @@ class ExceptionManager {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
         problemDetail.setDetail("Missing required param: %s".formatted(ex.getParameterName()));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(problemDetail);
+    }
+
+    @ExceptionHandler(ExternalServiceError.class)
+    public ResponseEntity<ProblemDetail> externalSeriveError(ExternalServiceError ex) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
+        problemDetail.setDetail("One of dependency service is down. Please try later");
+        log.error("External service error:", ex);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(problemDetail);
     }
 
     @ExceptionHandler(Exception.class)

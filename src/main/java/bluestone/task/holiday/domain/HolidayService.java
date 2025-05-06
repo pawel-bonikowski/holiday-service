@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface HolidayService {
 
-    List<Holiday> getHolidays(LocalDate startDate, CountryCode countryCode);
+    List<Holiday> getHolidays(LocalDate startDate, CountryCode countryCode) throws ExternalServiceError;
 
-    Set<CountryCode> getSupportedCountries();
+    Set<CountryCode> getSupportedCountries() throws ExternalServiceError;
 }
