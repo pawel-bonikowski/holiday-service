@@ -34,6 +34,6 @@ curl -X GET --location "http://localhost:3000/firstCommonHoliday?date=2025-01-01
 ```
 
 ## API Limitation:
- - The maximum range of search is 3 years. So only holidays from this area are consider in queries.
+ - The to limit processed data date range is limited to 1 year. So only holidays from this area are consider in queries.
  - In this service we consider only Holidays that are nationwide. Local once are ignored
 

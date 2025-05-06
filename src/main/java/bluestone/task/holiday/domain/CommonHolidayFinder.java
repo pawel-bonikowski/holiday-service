@@ -16,8 +16,9 @@ public class CommonHolidayFinder {
 
     public Optional<CommonHoliday> findFirstCommonHoliday(LocalDate startDate, CountryCode country1, CountryCode country2) {
         validateCountries(country1, country2);
-        var holidaysFromCountry1 = CompletableFuture.supplyAsync(() -> holidayService.getHolidays(startDate, country1));
-        var holidaysFromCountry2 = CompletableFuture.supplyAsync(() -> holidayService.getHolidays(startDate, country2));
+        LocalDate dayAfterProvidedData = startDate.plusDays(1);
+        var holidaysFromCountry1 = CompletableFuture.supplyAsync(() -> holidayService.getHolidays(dayAfterProvidedData, country1));
+        var holidaysFromCountry2 = CompletableFuture.supplyAsync(() -> holidayService.getHolidays(dayAfterProvidedData, country2));
 
         CompletableFuture.allOf(holidaysFromCountry1, holidaysFromCountry2).join();
         Map<LocalDate, List<Holiday>> groupedByDate = holidaysFromCountry2.join().stream().collect(Collectors.groupingBy(Holiday::date));

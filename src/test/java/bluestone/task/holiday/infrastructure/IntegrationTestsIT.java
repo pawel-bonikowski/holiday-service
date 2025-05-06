@@ -9,8 +9,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
@@ -23,7 +21,12 @@ import java.time.LocalDate;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class IntegrationTestsIT {
 
-     static WireMockServer wireMockServer = new WireMockServer(WireMockConfiguration
+    public static final String VALID_DATE = "2024-12-31";
+    public static final String PL = "PL";
+    public static final String DE = "DE";
+    public static final String ES = "ES";
+    public static final String US = "US";
+    static WireMockServer wireMockServer = new WireMockServer(WireMockConfiguration
             .options()
             .port(5833));
     @LocalServerPort
@@ -44,7 +47,7 @@ public class IntegrationTestsIT {
     @Test
     void successfulRequest_NewYearReturn() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, "2025-01-01", "PL", "DE");
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, VALID_DATE, PL, DE);
         CommonHolidayResponse result = restTemplate.getForObject(url, CommonHolidayResponse.class);
         Assertions.assertNotNull(result);
         Assertions.assertEquals("Nowy Rok", result.name1());
@@ -55,7 +58,7 @@ public class IntegrationTestsIT {
     @Test
     void successfulRequest_noMatch() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, "2025-01-01", "PL", "ES");
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, VALID_DATE, PL, ES);
         ResponseEntity<Void> forObject = restTemplate.getForEntity(url, Void.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(404), forObject.getStatusCode());
     }
@@ -63,7 +66,7 @@ public class IntegrationTestsIT {
     @Test
     void unsuccessfulRequest_unsupportedCountry() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, "2025-01-01", "US", "ES");
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, VALID_DATE, US, ES);
         ResponseEntity<ProblemDetail> forObject = restTemplate.getForEntity(url, ProblemDetail.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(400), forObject.getStatusCode());
     }
@@ -71,7 +74,7 @@ public class IntegrationTestsIT {
     @Test
     void unsuccessfulRequest_invalidDateFormat() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, "1.1.2025", "PL", "DE");
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s&countryCode2=%s".formatted(port, "1.1.2025", PL, DE);
         ResponseEntity<ProblemDetail> forObject = restTemplate.getForEntity(url, ProblemDetail.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(400), forObject.getStatusCode());
     }
@@ -79,7 +82,7 @@ public class IntegrationTestsIT {
     @Test
     void unsuccessfulRequest_missingCountry2Param() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s".formatted(port, "2025-01-01", "PL");
+        String url = "http://localhost:%d/firstCommonHoliday?date=%s&countryCode1=%s".formatted(port, VALID_DATE, PL);
         ResponseEntity<ProblemDetail> forObject = restTemplate.getForEntity(url, ProblemDetail.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(400), forObject.getStatusCode());
     }
@@ -87,7 +90,7 @@ public class IntegrationTestsIT {
     @Test
     void unsuccessfulRequest_invalidPath() {
         TestRestTemplate restTemplate = new TestRestTemplate();
-        String url = "http://localhost:%d/invalidPath?date=%s&countryCode1=%s".formatted(port, "2025-01-01", "PL");
+        String url = "http://localhost:%d/invalidPath?date=%s&countryCode1=%s".formatted(port, VALID_DATE, PL);
         ResponseEntity<Void> forObject = restTemplate.getForEntity(url, Void.class);
         Assertions.assertEquals(HttpStatusCode.valueOf(404), forObject.getStatusCode());
     }

@@ -56,9 +56,9 @@ class CommonHolidayFinderTest {
         //then
         Assertions.assertTrue(result.isPresent());
         CommonHoliday commonHoliday = result.get();
-        Assertions.assertEquals(LocalDate.of(2025, 1, 1), commonHoliday.date());
-        Assertions.assertEquals("Nowy Rok", commonHoliday.name1());
-        Assertions.assertEquals("Capodanno", commonHoliday.name2());
+        Assertions.assertEquals(LocalDate.of(2025, 1, 6), commonHoliday.date());
+        Assertions.assertEquals("Trzech Króli", commonHoliday.name1());
+        Assertions.assertEquals("Epifania", commonHoliday.name2());
     }
 
     @Test
