@@ -1,0 +1,11 @@
+### GET common holiday
+< {%
+    request.variables.set("port", "3000")
+    request.variables.set("country1", "PL")
+    request.variables.set("country2", "ES")
+    request.variables.set("startDate", "2025-08-01")
+%}
+GET http://localhost:{{port}}/firstCommonHoliday
+    ?date={{startDate}}&countryCode1={{country1}}&countryCode2={{country2}}
+
+###

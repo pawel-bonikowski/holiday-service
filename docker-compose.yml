@@ -1,0 +1,13 @@
+version: "3.0.1"
+services:
+  api:
+    image: "alpine/java:21-jre"
+    working_dir: /app
+    volumes:
+       - ./target/holiday-service-0.0.1.jar:/app/app.jar
+    command:
+      - "java"
+      -  "-jar"
+      - "/app/app.jar"
+    ports:
+      - "3000:8080"
