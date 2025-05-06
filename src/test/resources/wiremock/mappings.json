@@ -1,0 +1,1355 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPath": "/PublicHolidays",
+        "queryParameters": {
+          "countryIsoCode": {
+            "equalTo": "DE"
+          },
+          "validFrom": {
+            "equalTo": "2025-01-01"
+          },
+          "validTo": {
+            "equalTo": "2026-01-01"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": "94498ba1-28e3-4dcd-b28f-d7aaf4cc56d7",
+            "startDate": "2025-01-01",
+            "endDate": "2025-01-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Neujahr"
+              },
+              {
+                "language": "EN",
+                "text": "New Year's Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "04f86fc2-424a-46e5-befd-2dce33158470",
+            "startDate": "2025-01-06",
+            "endDate": "2025-01-06",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Heilige Drei Könige"
+              },
+              {
+                "language": "EN",
+                "text": "Epiphany"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-ST",
+                "shortName": "ST"
+              },
+              {
+                "code": "DE-BY",
+                "shortName": "BY"
+              },
+              {
+                "code": "DE-BW",
+                "shortName": "BW"
+              }
+            ]
+          },
+          {
+            "id": "88848d07-197b-4b4f-91f6-3cb24a378384",
+            "startDate": "2025-03-08",
+            "endDate": "2025-03-08",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Internationaler Frauentag"
+              },
+              {
+                "language": "EN",
+                "text": "International Women's Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-MV",
+                "shortName": "MV"
+              },
+              {
+                "code": "DE-BE",
+                "shortName": "BE"
+              }
+            ]
+          },
+          {
+            "id": "b921a500-5e7e-42b6-9348-885f3157ed4c",
+            "startDate": "2025-04-07",
+            "endDate": "2025-04-07",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Karfreitag"
+              },
+              {
+                "language": "EN",
+                "text": "Good Friday"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "6ffa6452-099c-494b-a920-aeaa7adc261a",
+            "startDate": "2025-04-09",
+            "endDate": "2025-04-09",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Ostersonntag"
+              },
+              {
+                "language": "EN",
+                "text": "Easter Sunday"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-BB",
+                "shortName": "BB"
+              }
+            ]
+          },
+          {
+            "id": "2cc013e7-7079-4c89-a559-27efca5c7b78",
+            "startDate": "2025-04-10",
+            "endDate": "2025-04-10",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Ostermontag"
+              },
+              {
+                "language": "EN",
+                "text": "Easter Monday"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "1e25e6a2-85fe-46dd-9fab-9388df4a445c",
+            "startDate": "2025-05-01",
+            "endDate": "2025-05-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Tag der Arbeit"
+              },
+              {
+                "language": "EN",
+                "text": "Labour Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "c18498e4-d3a7-4e27-8ea3-18e396c2d785",
+            "startDate": "2025-05-18",
+            "endDate": "2025-05-18",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Christi Himmelfahrt"
+              },
+              {
+                "language": "EN",
+                "text": "Ascension Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "31c384f2-709c-4c55-8af4-f550b8e1006b",
+            "startDate": "2025-05-28",
+            "endDate": "2025-05-28",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Pfingstsonntag"
+              },
+              {
+                "language": "EN",
+                "text": "Pentecost Sunday"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-BB",
+                "shortName": "BB"
+              }
+            ]
+          },
+          {
+            "id": "9730d923-2686-4d44-8fa5-b4c46a1937f8",
+            "startDate": "2025-05-29",
+            "endDate": "2025-05-29",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Pfingstmontag"
+              },
+              {
+                "language": "EN",
+                "text": "Pentecost Monday"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "86ee67fc-a51f-4f7b-a0c6-f6e9e11eb0ed",
+            "startDate": "2025-06-08",
+            "endDate": "2025-06-08",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Fronleichnam"
+              },
+              {
+                "language": "EN",
+                "text": "Corpus Christi"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-NW",
+                "shortName": "NW"
+              },
+              {
+                "code": "DE-BY",
+                "shortName": "BY"
+              },
+              {
+                "code": "DE-HE",
+                "shortName": "HE"
+              },
+              {
+                "code": "DE-RP",
+                "shortName": "RP"
+              },
+              {
+                "code": "DE-BW",
+                "shortName": "BW"
+              },
+              {
+                "code": "DE-SL",
+                "shortName": "SL"
+              }
+            ]
+          },
+          {
+            "id": "66234202-e1f0-4bd1-9504-45fdd4ae5808",
+            "startDate": "2025-08-08",
+            "endDate": "2025-08-08",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Friedensfest"
+              },
+              {
+                "language": "EN",
+                "text": "High Festival of Peace"
+              }
+            ],
+            "regionalScope": "Local",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-BY-AU",
+                "shortName": "BY-AU"
+              }
+            ]
+          },
+          {
+            "id": "07617cd9-9dcf-459b-b30d-ac612ae42cd9",
+            "startDate": "2025-08-15",
+            "endDate": "2025-08-15",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Mariä Himmelfahrt"
+              },
+              {
+                "language": "EN",
+                "text": "Assumption Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-BY",
+                "shortName": "BY"
+              },
+              {
+                "code": "DE-SL",
+                "shortName": "SL"
+              }
+            ]
+          },
+          {
+            "id": "dc8830b1-0d82-45ad-911f-5781056ed994",
+            "startDate": "2025-09-20",
+            "endDate": "2025-09-20",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Weltkindertag"
+              },
+              {
+                "language": "EN",
+                "text": "World Children's Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-TH",
+                "shortName": "TH"
+              }
+            ]
+          },
+          {
+            "id": "f4f1fe82-cd70-4d33-b456-f78f9b77f064",
+            "startDate": "2025-10-03",
+            "endDate": "2025-10-03",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Tag der Deutschen Einheit"
+              },
+              {
+                "language": "EN",
+                "text": "Day of German Unity"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "0e16697c-6a3d-43c1-98cc-d322a330d2c0",
+            "startDate": "2025-10-31",
+            "endDate": "2025-10-31",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Reformationstag"
+              },
+              {
+                "language": "EN",
+                "text": "Reformation Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-MV",
+                "shortName": "MV"
+              },
+              {
+                "code": "DE-ST",
+                "shortName": "ST"
+              },
+              {
+                "code": "DE-NI",
+                "shortName": "NI"
+              },
+              {
+                "code": "DE-BB",
+                "shortName": "BB"
+              },
+              {
+                "code": "DE-HH",
+                "shortName": "HH"
+              },
+              {
+                "code": "DE-HB",
+                "shortName": "HB"
+              },
+              {
+                "code": "DE-SN",
+                "shortName": "SN"
+              },
+              {
+                "code": "DE-TH",
+                "shortName": "TH"
+              },
+              {
+                "code": "DE-SH",
+                "shortName": "SH"
+              }
+            ]
+          },
+          {
+            "id": "ed4084d4-897c-4c1c-9d11-837874a5122f",
+            "startDate": "2025-11-01",
+            "endDate": "2025-11-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Allerheiligen"
+              },
+              {
+                "language": "EN",
+                "text": "All Saints' Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-NW",
+                "shortName": "NW"
+              },
+              {
+                "code": "DE-BY",
+                "shortName": "BY"
+              },
+              {
+                "code": "DE-RP",
+                "shortName": "RP"
+              },
+              {
+                "code": "DE-BW",
+                "shortName": "BW"
+              },
+              {
+                "code": "DE-SL",
+                "shortName": "SL"
+              }
+            ]
+          },
+          {
+            "id": "0044e1dc-f326-48a6-b006-4ab66d13bd04",
+            "startDate": "2025-11-22",
+            "endDate": "2025-11-22",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Buß- und Bettag"
+              },
+              {
+                "language": "EN",
+                "text": "Repentance Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": false,
+            "subdivisions": [
+              {
+                "code": "DE-SN",
+                "shortName": "SN"
+              }
+            ]
+          },
+          {
+            "id": "eca484e0-f6a7-4ca4-9891-5def5648c97c",
+            "startDate": "2025-12-25",
+            "endDate": "2025-12-25",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "1. Weihnachtsfeiertag"
+              },
+              {
+                "language": "EN",
+                "text": "Christmas Day"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "f9e24f26-c4a9-44e7-bda8-3c56fa11eb55",
+            "startDate": "2025-12-26",
+            "endDate": "2025-12-26",
+            "type": "Public",
+            "name": [
+              {
+                "language": "DE",
+                "text": "2. Weihnachtsfeiertag"
+              },
+              {
+                "language": "EN",
+                "text": "2nd Day of Christmas"
+              }
+            ],
+            "regionalScope": "Regional",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPath": "/PublicHolidays",
+        "queryParameters": {
+          "countryIsoCode": {
+            "equalTo": "PL"
+          },
+          "validFrom": {
+            "equalTo": "2025-01-01"
+          },
+          "validTo": {
+            "equalTo": "2026-01-01"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": "9522a4c2-da21-4d04-a056-92d8694ffc0a",
+            "startDate": "2025-01-01",
+            "endDate": "2025-01-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Nowy Rok"
+              },
+              {
+                "language": "DE",
+                "text": "Neujahr"
+              },
+              {
+                "language": "EN",
+                "text": "New Year's Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "a598c823-bbfa-4950-9bf2-86484a1b181b",
+            "startDate": "2025-01-06",
+            "endDate": "2025-01-06",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Święto Trzech Króli"
+              },
+              {
+                "language": "DE",
+                "text": "Heilige Drei Könige"
+              },
+              {
+                "language": "EN",
+                "text": "Epiphany"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "f68070d4-038c-41fa-936b-4b31bcaa36bd",
+            "startDate": "2025-04-09",
+            "endDate": "2025-04-09",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Wielkanoc"
+              },
+              {
+                "language": "DE",
+                "text": "Ostersonntag"
+              },
+              {
+                "language": "EN",
+                "text": "Easter Sunday"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "ffa1352b-076f-4ebf-bd4b-ac94d7f9f272",
+            "startDate": "2025-04-10",
+            "endDate": "2025-04-10",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Drugi Dzień Wielkanocy"
+              },
+              {
+                "language": "DE",
+                "text": "Ostermontag"
+              },
+              {
+                "language": "EN",
+                "text": "Easter Monday"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "9b341280-2c69-46fa-9491-6629ca756be9",
+            "startDate": "2025-05-01",
+            "endDate": "2025-05-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Święto Pracy"
+              },
+              {
+                "language": "DE",
+                "text": "Tag der Arbeit"
+              },
+              {
+                "language": "EN",
+                "text": "Labour Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "b22b4113-b65a-4b06-a793-eb6e4eab9aab",
+            "startDate": "2025-05-03",
+            "endDate": "2025-05-03",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Święto Narodowe Trzeciego Maja"
+              },
+              {
+                "language": "DE",
+                "text": "Nationalfeiertag"
+              },
+              {
+                "language": "EN",
+                "text": "Constitution Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "688783a5-65ca-4dc5-b4db-fa93bc0201ad",
+            "startDate": "2025-05-28",
+            "endDate": "2025-05-28",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Zielone Świątki"
+              },
+              {
+                "language": "DE",
+                "text": "Pfingsten"
+              },
+              {
+                "language": "EN",
+                "text": "Pentecost"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "55ef10bc-4a17-4171-8412-3253e725f58c",
+            "startDate": "2025-06-08",
+            "endDate": "2025-06-08",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Boże Ciało"
+              },
+              {
+                "language": "DE",
+                "text": "Fronleichnam"
+              },
+              {
+                "language": "EN",
+                "text": "Corpus Christi"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "dbbb1b7c-9008-4921-ba71-1c29638937e4",
+            "startDate": "2025-08-15",
+            "endDate": "2025-08-15",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Wniebowzięcie Najświętszej Maryi Panny"
+              },
+              {
+                "language": "DE",
+                "text": "Mariä Himmelfahrt"
+              },
+              {
+                "language": "EN",
+                "text": "Assumption Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "40b1d5c7-b976-40ee-a872-8d4fed5be8bc",
+            "startDate": "2025-11-01",
+            "endDate": "2025-11-01",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Wszystkich Świętych"
+              },
+              {
+                "language": "DE",
+                "text": "Allerheiligen"
+              },
+              {
+                "language": "EN",
+                "text": "All Saints' Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "72cee06b-c376-48c5-a0da-7f091e4ec2ba",
+            "startDate": "2025-11-11",
+            "endDate": "2025-11-11",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Narodowe Święto Niepodległości"
+              },
+              {
+                "language": "DE",
+                "text": "Nationaler Unabhängigkeitstag"
+              },
+              {
+                "language": "EN",
+                "text": "Independence Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "a18e7f48-26b7-4f1d-a463-fad5593c0505",
+            "startDate": "2025-12-25",
+            "endDate": "2025-12-25",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Boże Narodzenie"
+              },
+              {
+                "language": "DE",
+                "text": "Weihnachten"
+              },
+              {
+                "language": "EN",
+                "text": "Christmas Day"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          },
+          {
+            "id": "e3967507-0b1c-4b08-a6db-28de0faee1a7",
+            "startDate": "2025-12-26",
+            "endDate": "2025-12-26",
+            "type": "Public",
+            "name": [
+              {
+                "language": "PL",
+                "text": "Drugi Dzień Bożego Narodzenia"
+              },
+              {
+                "language": "DE",
+                "text": "Zweiter Weihnachtsfeiertag"
+              },
+              {
+                "language": "EN",
+                "text": "2nd Day of Christmas"
+              }
+            ],
+            "regionalScope": "National",
+            "temporalScope": "FullDay",
+            "nationwide": true
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPath": "/PublicHolidays",
+        "queryParameters": {
+          "countryIsoCode": {
+            "equalTo": "ES"
+          },
+          "validFrom": {
+            "equalTo": "2025-01-01"
+          },
+          "validTo": {
+            "equalTo": "2026-01-01"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": []
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPath": "/Countries"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "isoCode": "AD",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Andorra"
+              }
+            ],
+            "officialLanguages": [
+              "CA"
+            ]
+          },
+          {
+            "isoCode": "AL",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Albanien"
+              }
+            ],
+            "officialLanguages": [
+              "SQ"
+            ]
+          },
+          {
+            "isoCode": "AT",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Österreich"
+              }
+            ],
+            "officialLanguages": [
+              "DE"
+            ]
+          },
+          {
+            "isoCode": "BE",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Belgien"
+              }
+            ],
+            "officialLanguages": [
+              "NL",
+              "FR",
+              "DE"
+            ]
+          },
+          {
+            "isoCode": "BG",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Bulgarien"
+              }
+            ],
+            "officialLanguages": [
+              "BG"
+            ]
+          },
+          {
+            "isoCode": "BR",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Brasilien"
+              }
+            ],
+            "officialLanguages": [
+              "PT"
+            ]
+          },
+          {
+            "isoCode": "BY",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Belarus"
+              }
+            ],
+            "officialLanguages": [
+              "BE",
+              "RU"
+            ]
+          },
+          {
+            "isoCode": "CH",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Schweiz"
+              }
+            ],
+            "officialLanguages": [
+              "DE",
+              "FR",
+              "IT",
+              "RM"
+            ]
+          },
+          {
+            "isoCode": "CZ",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Tschechien"
+              }
+            ],
+            "officialLanguages": [
+              "CS"
+            ]
+          },
+          {
+            "isoCode": "DE",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Deutschland"
+              }
+            ],
+            "officialLanguages": [
+              "DE"
+            ]
+          },
+          {
+            "isoCode": "EE",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Estland"
+              }
+            ],
+            "officialLanguages": [
+              "ET"
+            ]
+          },
+          {
+            "isoCode": "ES",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Spanien"
+              }
+            ],
+            "officialLanguages": [
+              "ES",
+              "CA",
+              "EU",
+              "GL"
+            ]
+          },
+          {
+            "isoCode": "FR",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Frankreich"
+              }
+            ],
+            "officialLanguages": [
+              "FR"
+            ]
+          },
+          {
+            "isoCode": "HR",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Kroatien"
+              }
+            ],
+            "officialLanguages": [
+              "HR"
+            ]
+          },
+          {
+            "isoCode": "HU",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Ungarn"
+              }
+            ],
+            "officialLanguages": [
+              "HU"
+            ]
+          },
+          {
+            "isoCode": "IE",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Irland"
+              }
+            ],
+            "officialLanguages": [
+              "EN",
+              "GA"
+            ]
+          },
+          {
+            "isoCode": "IT",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Italien"
+              }
+            ],
+            "officialLanguages": [
+              "IT"
+            ]
+          },
+          {
+            "isoCode": "LI",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Liechtenstein"
+              }
+            ],
+            "officialLanguages": [
+              "DE"
+            ]
+          },
+          {
+            "isoCode": "LT",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Litauen"
+              }
+            ],
+            "officialLanguages": [
+              "LT"
+            ]
+          },
+          {
+            "isoCode": "LU",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Luxemburg"
+              }
+            ],
+            "officialLanguages": [
+              "LB",
+              "FR",
+              "DE"
+            ]
+          },
+          {
+            "isoCode": "LV",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Lettland"
+              }
+            ],
+            "officialLanguages": [
+              "LV"
+            ]
+          },
+          {
+            "isoCode": "MC",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Monaco"
+              }
+            ],
+            "officialLanguages": [
+              "FR"
+            ]
+          },
+          {
+            "isoCode": "MD",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Moldau"
+              }
+            ],
+            "officialLanguages": [
+              "RO"
+            ]
+          },
+          {
+            "isoCode": "MT",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Malta"
+              }
+            ],
+            "officialLanguages": [
+              "MT",
+              "EN"
+            ]
+          },
+          {
+            "isoCode": "MX",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Mexiko"
+              }
+            ],
+            "officialLanguages": [
+              "ES"
+            ]
+          },
+          {
+            "isoCode": "NL",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Niederlande"
+              }
+            ],
+            "officialLanguages": [
+              "NL"
+            ]
+          },
+          {
+            "isoCode": "PL",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Polen"
+              }
+            ],
+            "officialLanguages": [
+              "PL"
+            ]
+          },
+          {
+            "isoCode": "PT",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Portugal"
+              }
+            ],
+            "officialLanguages": [
+              "PT"
+            ]
+          },
+          {
+            "isoCode": "RO",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Rumänien"
+              }
+            ],
+            "officialLanguages": [
+              "RO"
+            ]
+          },
+          {
+            "isoCode": "RS",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Serbien"
+              }
+            ],
+            "officialLanguages": [
+              "SR"
+            ]
+          },
+          {
+            "isoCode": "SE",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Schweden"
+              }
+            ],
+            "officialLanguages": [
+              "SV"
+            ]
+          },
+          {
+            "isoCode": "SI",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Slowenien"
+              }
+            ],
+            "officialLanguages": [
+              "SL"
+            ]
+          },
+          {
+            "isoCode": "SK",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Slowakei"
+              }
+            ],
+            "officialLanguages": [
+              "SK"
+            ]
+          },
+          {
+            "isoCode": "SM",
+            "name": [
+              {
+                "language": "DE",
+                "text": "San Marino"
+              }
+            ],
+            "officialLanguages": [
+              "IT"
+            ]
+          },
+          {
+            "isoCode": "VA",
+            "name": [
+              {
+                "language": "DE",
+                "text": "Vatikanstadt"
+              }
+            ],
+            "officialLanguages": [
+              "IT"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+

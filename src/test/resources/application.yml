@@ -1,0 +1,3 @@
+openholiday:
+  client:
+    baseUrl: "http://localhost:5833/"

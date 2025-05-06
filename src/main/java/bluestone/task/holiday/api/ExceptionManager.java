@@ -20,7 +20,7 @@ class ExceptionManager {
     private static final Logger log = LoggerFactory.getLogger(ExceptionManager.class);
 
     @ExceptionHandler(UnsupportedCountryException.class)
-    public ResponseEntity<ProblemDetail> onUnsupportedClassException(UnsupportedCountryException ex) {
+    public ResponseEntity<ProblemDetail> unexpectedError(UnsupportedCountryException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
         problemDetail.setDetail(ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(problemDetail);
@@ -47,14 +47,14 @@ class ExceptionManager {
     }
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
-    public ResponseEntity<ProblemDetail> onUnsupportedClassException(MissingServletRequestParameterException ex) {
+    public ResponseEntity<ProblemDetail> missingRequiredArgument(MissingServletRequestParameterException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
         problemDetail.setDetail("Missing required param: %s".formatted(ex.getParameterName()));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(problemDetail);
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ProblemDetail> onUnsupportedClassException(Exception ex) {
+    public ResponseEntity<ProblemDetail> unexpectedError(Exception ex) {
 
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
         problemDetail.setDetail("Unexpected error");
